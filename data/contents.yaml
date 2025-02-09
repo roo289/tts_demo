@@ -1,0 +1,11 @@
+title: VITS
+abstract: This is a sample abstract
+samples:
+  - original: data/original.wav
+    modified: data/modified.wav
+    pitch_curve: data/canvas.png
+    text: This is a test sentence. (1)
+  - original: data/original.wav
+    modified: data/modified.wav
+    pitch_curve: data/canvas.png
+    text: This is a test sentence. (2)
