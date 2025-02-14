@@ -1,4 +1,5 @@
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
+from pathlib import Path
 import sys
 import yaml
 
@@ -44,7 +45,7 @@ class Tag:
    
     @staticmethod
     def image(path: str):
-        return f'<img src="{path}" width="20%" height="20%"/>'
+        return f'<img src="{path}" width="60%" height="60%"/>'
    
     @staticmethod
     def table_entry(tag: str):
@@ -103,6 +104,10 @@ class Html:
 
 
 def main(content):
+    data_dir = Path(content['data_dir'])
+    for entry in content['samples']:
+        for key in ['pitch_curve', 'original', 'modified']:
+            entry[key] = data_dir / entry[key]
     sample_table = create_table(content['samples'])
     with open('sample_table_dump.html', 'w') as f:
         f.writelines(sample_table)           

@@ -1,11 +1,24 @@
 title: VITS
 abstract: This is a sample abstract
+data_dir: data/samples/
 samples:
-  - original: data/original.wav
-    modified: data/modified.wav
-    pitch_curve: data/canvas.png
-    text: This is a test sentence. (1)
-  - original: data/original.wav
-    modified: data/modified.wav
-    pitch_curve: data/canvas.png
-    text: This is a test sentence. (2)
+  - original: original_1.wav
+    modified: modified_1.wav
+    pitch_curve: canvas_1.png
+    text: I’m eating a very delicious <span class="pitch">and bright red apple.</span>
+    emotion: Neutral
+  - original: original_2.wav
+    modified: modified_2.wav
+    pitch_curve: canvas_2.png
+    text: The king is marching to the field <span class="pitch">and to glory.</span>
+    emotion: Happy  
+  - original: original_3.wav
+    modified: modified_3.wav
+    pitch_curve: canvas_3.png
+    text: Her pet dog has an <span class="pitch">amazingly friendly</span> personality.
+    emotion: Neutral
+  - original: original_4.wav
+    modified: modified_4.wav
+    pitch_curve: canvas_4.png
+    text: That’s the <span class="pitch">best news</span> I’ve heard in a long time.
+    emotion: Happy

@@ -1,17 +1,7 @@
-# Demo Page Generator
+Launch the website by dragging and dropping index.html to your browser of chocie. 
+Click on the [Play] to listen to the audio samples. 
 
-## Content Layout
-```
-sample entry:
-text: [text]
-emotion: [text]
-curve: [image_path]
-original_audio: [wav_path]
-modified_audio: [wav_path]
-```
-
-## Generate sample table from contents.yaml 
-```bash
-python demo_html_generator.py index.html data/contents.yaml
-```
-
+Content Description:
+Emotion: The emotion ID supplied to the TTS model when synthesizing the audio.
+Original: The original synthesized audio without any pitch modification.
+Modified: The audio re-synthesized with the pitch-scaling algorithm applied based on the drawn pitch curve. 

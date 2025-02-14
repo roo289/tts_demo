@@ -8,9 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<title id="page-title">VITS</title>
+	<title id="page-title">Localized Pitch Control for Encoder-Decoder Text-to-Speech Architectures</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 
@@ -24,19 +24,17 @@
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<div class="text-center">
-	<h2 id="header-title">Demo-TTS: </h2>
-      <h3 id="sub-title">Sample TTS Page</h3>
-      [<a id="paper-url" href="https://arxiv.org/abs/1">Paper</a>]
+	<h2 id="header-title">Localized Pitch Control for Encoder-Decoder Text-to-Speech Architectures</h2>
 
         <p class="fst-italic mb-0">
         	<br>
-           Team
+			  
       <p></p>
         </p>
-        <p><b>Comapany</b></p>
+        <p><b> </b></p>
 	</div>
 	<p id="abstract"><b>Abstract.</b> 
-		Abstract here
+		We present a method for local phoneme-based pitch control in text-to-speech (TTS) systems, adaptable to any encoder-decoder architecture. The approach integrates a pitch prediction module, which predicts an appropriate natural-sounding pitch contour for the voiced phonemes in the target phrase, and a pitch encoding module that quantizes the pitch values and via a codebook provides associated pitch embeddings that are sent to the decoder to exert pitch control. A graphical user interface allows users to adjust the predicted pitch contours, providing fine control over the speech output and enabling considerable prododic nuance. The result is a high degree of phoneme-level pitch control, demonstrated using the Tacotron 2 framework, with a pitch predictor mean squared error (MSE) of 19.08 Hz vs ground truth and a correlation coefficient of 0.91 for target vs. actual pitch in rendering the desired phoneme-level pitches. Audio demos in the accompanying website demonstrate both the usefulness and naturalness of pitch-controlled synthesized speech that our system facilitates.
 	</p>
 
 	<p>
@@ -52,11 +50,11 @@
 	<h2 id="model-overview" style="text-align: center;">System Overview</h2>
 	<body>
 	<p style="text-align: center;">
-		<img src="pics/overview.jpeg" height="400" width="800">
+		<img src="data/system.png" height="400" width="800">
 	</p>
 	</body>
 		<p style="text-align: center;" >
-			<b>Figure 1.</b> An overview of the Demo-TTS architecture (1) Text 1. (2) Text 2.
+			<b>Figure 1.</b> Pitch Control Architecture (blue boxes $\sim$ added pitch control components)
 		</p>
 </div>
 
@@ -75,36 +73,29 @@
 				</thead>
 				<tbody id="sample-list">
 					<tr>
-						<td style="vertical-align : middle;text-align:center;">Angry</td>
-						<td style="vertical-align : middle;text-align:center;">This is a test sentence</td>
-						<td style="vertical-align : middle;text-align:center;"><img src="data/canvas.png" width="20%" height="20%"/></td>
-						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data/original.wav"/>Your browser does not support the audio element.</audio></td>
-						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data/modified.wav"/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>s
+						<td style="vertical-align : middle;text-align:center;">Neutral</td>
+						<td style="vertical-align : middle;text-align:center;">I’m eating a very delicious <span class="pitch">and bright red apple.</span></td>
+						<td style="vertical-align : middle;text-align:center;"><img src="data\samples\canvas_1.png" width="60%" height="60%"/></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\original_1.wav"/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\modified_1.wav"/>Your browser does not support the audio element.</audio></td>
+					</tr><tr>
 						<td style="vertical-align : middle;text-align:center;">Happy</td>
-						<td style="vertical-align : middle;text-align:center;">Text 2</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/Emotion_samples/-6819968704143559039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">Sad</td>
-						<td style="vertical-align : middle;text-align:center;">Text 3</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/Emotion_samples/-7382464751423701418.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">Tender</td>
-						<td style="vertical-align : middle;text-align:center;">Text 4</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/Emotion_samples/-6021343736706359392.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">Confused</td>
-						<td style="vertical-align : middle;text-align:center;">Text 5</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/Emotion_samples/3438640816049515540.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">Fear</td>
-						<td style="vertical-align : middle;text-align:center;">Text 6</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/Emotion_samples/-8670284969990546413.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;">The king is marching to the field <span class="pitch">and to glory.</span></td>
+						<td style="vertical-align : middle;text-align:center;"><img src="data\samples\canvas_2.png" width="60%" height="60%"/></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\original_2.wav"/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\modified_2.wav"/>Your browser does not support the audio element.</audio></td>
+					</tr><tr>
+						<td style="vertical-align : middle;text-align:center;">Neutral</td>
+						<td style="vertical-align : middle;text-align:center;">Her pet dog has an <span class="pitch">amazingly friendly</span> personality.</td>
+						<td style="vertical-align : middle;text-align:center;"><img src="data\samples\canvas_3.png" width="60%" height="60%"/></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\original_3.wav"/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\modified_3.wav"/>Your browser does not support the audio element.</audio></td>
+					</tr><tr>
+						<td style="vertical-align : middle;text-align:center;">Happy</td>
+						<td style="vertical-align : middle;text-align:center;">That’s the <span class="pitch">best news</span> I’ve heard in a long time.</td>
+						<td style="vertical-align : middle;text-align:center;"><img src="data\samples\canvas_4.png" width="60%" height="60%"/></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\original_4.wav"/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio  controls style="width: 190px;"><source src="data\samples\modified_4.wav"/>Your browser does not support the audio element.</audio></td>
 					</tr>
 				</tbody>
 			</table>
