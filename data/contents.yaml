@@ -10,15 +10,46 @@ samples:
   - original: original_2.wav
     modified: modified_2.wav
     pitch_curve: canvas_2.png
-    text: The king is marching to the field <span class="pitch">and to glory.</span>
-    emotion: Happy  
+    text: Her pet dog has an <span class="pitch">amazingly friendly</span> personality.
+    emotion: Neutral
   - original: original_3.wav
     modified: modified_3.wav
     pitch_curve: canvas_3.png
-    text: Her pet dog has an <span class="pitch">amazingly friendly</span> personality.
-    emotion: Neutral
+    text: The king is marching to the field <span class="pitch">and to glory.</span>
+    emotion: Happy  
   - original: original_4.wav
     modified: modified_4.wav
     pitch_curve: canvas_4.png
     text: That’s the <span class="pitch">best news</span> I’ve heard in a long time.
     emotion: Happy
+  - original: original_5.wav
+    modified: modified_5.wav
+    pitch_curve: canvas_5.png
+    text: What is the <span class="pitch">actual reason</span> I'm here.
+    emotion: Extreme Happy
+  - original: original_6.wav
+    modified: modified_6.wav
+    pitch_curve: canvas_6.png
+    text: There are <span class="pitch">so many</span> people at the birthday party.
+    emotion: Extreme Happy
+  - original: original_7.wav
+    modified: modified_7.wav
+    pitch_curve: canvas_7.png
+    text: The bus left before I <span class="pitch">arrived</span>.
+    emotion: Sad
+  - original: original_8.wav
+    modified: modified_8.wav
+    pitch_curve: canvas_8.png
+    text: The rain is <span class="pitch">really</span> coming down heavy today.
+    emotion: Extreme Sad
+  - original: original_9.wav
+    modified: modified_9.wav
+    pitch_curve: canvas_9.png
+    text:  What is the question you're trying to <span class="pitch">ask</span>? 
+    emotion: Angry
+  - original: original_10.wav
+    modified: modified_10.wav
+    pitch_curve: canvas_10.png
+    text: What is it <span class="pitch">always</span> me? 
+    emotion: Extreme Angry 
+            
