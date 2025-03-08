@@ -60,15 +60,16 @@ class Tag:
         
 def create_table_entry(sample: dict):
     try:
-        text = sample['text'] 
         emotion = sample['emotion'] 
-        pitch_curve = Tag.image(sample['pitch_curve'])  
+        text = sample['text']
         audio_original = Tag.audio(sample['original'])
+        pitch_curve = Tag.image(sample['pitch_curve'])  
+        descrpition = sample['descrpition']
         audio_modified = Tag.audio(sample['modified'])
     except KeyError as e:
         print(f'Unable to process entry due to missing key: {e}')
         exit(1)
-    return Tag.table_row([emotion, text, pitch_curve, audio_original, audio_modified])
+    return Tag.table_row([emotion, text, audio_original, pitch_curve, descrpition, audio_modified])
     
 def create_table(sample_list: list[dict]):
     body = ""

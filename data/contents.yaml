@@ -7,34 +7,40 @@ samples:
     pitch_curve: canvas_1.png
     text: I’m eating a very delicious <span class="pitch">and bright red apple.</span>
     emotion: Neutral
+    descrpition: Pitch curve lowers the first half of the sentence and raises the second half, emphasizing the characteristics of the apple.
   - original: original_2.wav
     modified: modified_2.wav
     pitch_curve: canvas_2.png
     text: Her pet dog has an <span class="pitch">amazingly friendly</span> personality.
     emotion: Neutral
+    descrpition: The <i>amazingly friendly</i> description of the dog is raised in pitch for emphasis.
   - original: original_3.wav
     modified: modified_3.wav
     pitch_curve: canvas_3.png
     text: The king is marching to the field <span class="pitch">and to glory.</span>
     emotion: Happy  
+    descrpition: The end is reduced in pitch to be more subdued in nature.
   - original: original_4.wav
     modified: modified_4.wav
     pitch_curve: canvas_4.png
     text: That’s the <span class="pitch">best news</span> I’ve heard in a long time.
     emotion: Happy
+    descrpition: The words describing the news are raised in pitch for emphasis and to underline the happy emotion.
   - original: original_7.wav
     modified: modified_7.wav
     pitch_curve: canvas_7.png
     text: The bus left before I <span class="pitch">arrived</span>.
     emotion: Sad
+    descrpition: The pitch curve causes the pitch to gradually decrease through the sentence, further emphasizing the already decreased pitch with synthesized <i>sad</i> emotions.
   - original: original_8.wav
     modified: modified_8.wav
     pitch_curve: canvas_8.png
     text: The rain is <span class="pitch">really</span> coming down heavy today.
     emotion: Extreme Sad
+    descrpition: The pitch is increased on <i>really</i> to emphasize that word and imply the sad emotion is focused on the degree of rain.
   - original: original_9.wav
     modified: modified_9.wav
     pitch_curve: canvas_9.png
     text:  What is the question you're trying to <span class="pitch">ask</span>? 
     emotion: Angry
-            
+    descrpition: The pitch on the last word is adjusted to make it more clearly a question and to emphasize the focus of the speaker on that word.
