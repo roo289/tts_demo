@@ -45,7 +45,7 @@ class Tag:
    
     @staticmethod
     def image(path: str):
-        return f'<img src="{path}" width="60%" height="60%"/>'
+        return f'<img src="{path}" width="200 em" height="100 em"/>'
    
     @staticmethod
     def table_entry(tag: str):
