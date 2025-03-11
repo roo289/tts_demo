@@ -26,6 +26,12 @@ samples:
     text: That’s the <span class="pitch">best news</span> I’ve heard in a long time.
     emotion: Happy
     descrpition: The words describing the news are raised in pitch for emphasis and to underline the happy emotion.
+  - original: original_5.wav
+    modified: modified_5.wav
+    pitch_curve: canvas_5.png
+    text: There are so <span class="pitch">many people</span> here at the party.
+    emotion: Extreme Happy
+    descrpition: The pitch for <i>many people</i> is raised in pitch to further emphasize the excitement. 
   - original: original_7.wav
     modified: modified_7.wav
     pitch_curve: canvas_7.png
@@ -44,3 +50,9 @@ samples:
     text:  What is the question you're trying to <span class="pitch">ask</span>? 
     emotion: Angry
     descrpition: The pitch on the last word is adjusted to make it more clearly a question and to emphasize the focus of the speaker on that word.
+  - original: original_11.wav
+    modified: modified_11.wav
+    pitch_curve: canvas_11.png
+    text: Why am I learning about this <span class="pitch">now</span> of all times?
+    emotion: Extreme Angry
+    descrpition: The pitch is on the back half of the question, particularly on  <i>now</i> to further emphasize the emotion and anger of the speaker.
