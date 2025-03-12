@@ -49,10 +49,10 @@ samples:
     pitch_curve: canvas_9.png
     text:  What is the question you're trying to <span class="pitch">ask</span>? 
     emotion: Angry
-    descrpition: The pitch on the last word is adjusted to make it more clearly a question and to emphasize the focus of the speaker on that word.
+    descrpition: The increased pitch on <i>ask</i> adjusts the inflection to make it more clearly a question.
   - original: original_11.wav
     modified: modified_11.wav
     pitch_curve: canvas_11.png
     text: Why am I learning about this <span class="pitch">now</span> of all times?
     emotion: Extreme Angry
-    descrpition: The pitch is on the back half of the question, particularly on  <i>now</i> to further emphasize the emotion and anger of the speaker.
+    descrpition: The pitch is increased on the back half of the question, particularly on <i>now</i> to further emphasize the emotion and anger of the speaker.
